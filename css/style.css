@@ -106,13 +106,19 @@ main {
 	line-height: 18px;
 	outline: 1px solid blue;
 }
- .item a {
- 	display: block;
- }
 
 .item:nth-child(3n) {
 	margin-right: 0;
 }
+
+ .item a {
+ 	display: block;
+ }
+
+ .item_firm {
+ 	display: block;
+ 	text-transform: uppercase;
+ }
 
 h3 {
 	font-size: 14px;
