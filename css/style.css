@@ -215,6 +215,7 @@ a.btn_buy {
 	outline: 1px solid blue;
 	font-size: 14px;
 	line-height: 18px;
+	vertical-align: top;
 }
 
 .small_fotos a:last-child {
