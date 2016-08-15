@@ -10,10 +10,242 @@ h1 {
 	font-size: 30px;
 	line-height: 42px;
 	color: #000;
+	margin: 0;
 }
 
 h2 {
 	font-size: 24px;
 	line-height: 30px;
 	color: #000;
+	margin: 0;
 }
+
+img {
+	border: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+	outline: 1px solid blue;
+}
+
+.main_header .container{
+	padding-top: 15px;
+	padding-bottom: 17px;
+}
+
+.logo {
+	width: 111px;
+	float: left;
+
+}
+.main_navigation {
+	float: left;
+	margin-left: 40px;
+}
+
+.user_block {
+	float: right;
+	margin-right: 15px;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+.main_navigation li {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+main {
+	padding-top: 28px;
+	outline: 1px solid blue;
+}
+					/*	ХЛЕБНЫЕ КРОШКИ	*/
+.breadcrumbs {
+	margin-bottom: 55px;
+	outline: 1px solid blue;
+}
+
+.breadcrumbs_item {
+	display: inline-block;
+}
+
+.filters {
+	width: 220px;
+	float: left;
+	outline: 1px solid blue;
+}
+
+.filter {
+	outline: 1px solid blue;
+}
+							/*	КАТАЛОГ	*/
+.items {
+	width: 700px;
+	font-size: 0;
+	margin-left: 20px;
+	float: right;
+	margin-bottom: 45px;
+	outline: 1px solid blue;
+}
+.item {
+	display: inline-block;
+	width: 220px;
+	vertical-align: top;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 18px;
+	outline: 1px solid blue;
+}
+
+.item:nth-child(3n) {
+	margin-right: 0;
+}
+
+h3 {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.purchase {
+	margin-bottom: 16px;
+	font-size: 0;
+	text-align: center;
+}
+
+.price,
+a.btn_buy {
+	display: inline-block;
+	padding-top: 7px;
+	padding-bottom: 17px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.price {
+	width: 110px;
+	background: #e5e5e5;
+}
+
+a.btn_buy {
+	width: 80px;
+	background: #000;
+	color: #fff;
+}
+						/*	ПАГИНАЦИЯ	*/
+.pagination {
+	display: inline-block;
+	margin-left: 240px;
+	outline: 1px solid blue;
+}
+.pagination_item {
+	display: inline-block;
+	margin-right: 7px;
+	background: #000;
+	outline: 1px solid blue;
+}
+
+.pagination_item a {
+	display: block;
+	padding: 16px 18px;
+	color: #fff;
+}
+.active {
+	padding: 16px 18px;
+	display: block;
+	background: #fff;
+	color: #000;
+}
+						/*	ФУТЕР	*/
+.main_footer {
+	margin-top: 50px;
+	padding-bottom: 42px;
+}
+
+.footer_contacts {
+	width: 380px;
+	float: left;
+	outline: 1px solid blue;
+	margin-right: 20px;
+}
+
+.footer_social {
+	width: 300px;
+	float: left;
+	outline: 1px solid blue;
+}
+
+.footer_copyright {
+	width: 140px;
+	float: right;
+	outline: 1px solid blue;
+}
+
+					/*	ФОТО ТОВАРА	*/
+.item_fotos {
+	width: 460px;
+	float: left;
+	outline: 1px solid blue;
+}
+
+.main_foto {
+	margin-bottom: 20px;
+	outline: 1px solid blue;
+}
+.small_fotos {
+	font-size: 0;
+}
+.small_fotos a{
+	display: inline-block;
+	width: 140px;
+	margin-right: 20px;
+	outline: 1px solid blue;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.small_fotos a:last-child {
+	margin-right: 0;
+}
+					/*	ОПИСАНИЕ ТОВАРА*/
+.item_descript {
+	width: 390px;
+	float: right;
+	outline: 1px solid blue;
+}
+
+.service_info {
+	margin-bottom: 35px;
+}
+
+.descript_text {
+	margin-bottom: 40px;
+}
+
+.item_descript .purchase {
+	text-align: left;
+	margin-bottom: 60px;
+}
+
+.set_list {
+	margin-left: 20px;
+}
+
+						/*	ПСЕВДОРАСПОРКА	*/
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
