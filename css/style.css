@@ -22,6 +22,7 @@ h2 {
 
 img {
 	border: 0;
+	display: block;
 }
 
 p {
@@ -105,6 +106,9 @@ main {
 	line-height: 18px;
 	outline: 1px solid blue;
 }
+ .item a {
+ 	display: block;
+ }
 
 .item:nth-child(3n) {
 	margin-right: 0;
@@ -194,7 +198,7 @@ a.btn_buy {
 .item_fotos {
 	width: 460px;
 	float: left;
-	outline: 1px solid blue;
+	outline: 1px solid red;
 }
 
 .main_foto {
