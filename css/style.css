@@ -55,13 +55,19 @@ p {
 	float: right;
 	margin-right: 15px;
 }
-ul {
+
+.navigation_list {
 	padding: 0;
 	margin: 0;
+	font-size: 0;
 }
-.main_navigation li {
+
+.navigation_list li {
 	display: inline-block;
 	margin-right: 40px;
+	font-size: 14px;
+	line-height: 24px;
+	vertical-align: top;
 }
 
 main {
@@ -74,11 +80,19 @@ main {
 	outline: 1px solid blue;
 }
 
-.breadcrumbs_item {
-	display: inline-block;
+.breadcrumbs_list {
+	font-size: 0;
 }
 
-.filters {
+.breadcrumbs_item {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	line-height: 24px;
+	margin-right: 40px;
+}
+
+.left_col {
 	width: 220px;
 	float: left;
 	outline: 1px solid blue;
@@ -88,22 +102,24 @@ main {
 	outline: 1px solid blue;
 }
 							/*	КАТАЛОГ	*/
-.items {
+
+.right_col {
 	width: 700px;
-	font-size: 0;
 	margin-left: 20px;
 	float: right;
+}
+
+.items {
+	font-size: 0;
 	margin-bottom: 45px;
 	outline: 1px solid blue;
 }
 .item {
 	display: inline-block;
 	width: 220px;
-	vertical-align: top;
+	vertical-align: bottom;
 	margin-right: 20px;
 	margin-bottom: 20px;
-	font-size: 14px;
-	line-height: 18px;
 	outline: 1px solid blue;
 }
 
@@ -121,7 +137,6 @@ main {
  }
 
 h3 {
-	font-size: 14px;
 	line-height: 18px;
 }
 
@@ -153,12 +168,12 @@ a.btn_buy {
 }
 						/*	ПАГИНАЦИЯ	*/
 .pagination {
-	display: inline-block;
-	margin-left: 240px;
+	font-size: 0;
 	outline: 1px solid blue;
 }
 .pagination_item {
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 7px;
 	background: #000;
 	outline: 1px solid blue;
@@ -166,12 +181,16 @@ a.btn_buy {
 
 .pagination_item a {
 	display: block;
+	font-size: 14px;
+	line-height: 18px;
 	padding: 16px 18px;
 	color: #fff;
 }
-.active {
-	padding: 16px 18px;
+.active_page {
 	display: block;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 16px 18px;
 	background: #fff;
 	color: #000;
 }
@@ -204,6 +223,7 @@ a.btn_buy {
 .item_fotos {
 	width: 460px;
 	float: left;
+	margin-right: 40px;
 	outline: 1px solid red;
 }
 
@@ -236,6 +256,19 @@ a.btn_buy {
 
 .service_info {
 	margin-bottom: 35px;
+}
+
+.presence_item {
+	float: left;
+	width: 150px;
+	outline: 1px solid blue;
+}
+
+.code_item {
+	float: right;
+	width: 220px;
+	text-align: right;
+	outline: 1px solid blue;
 }
 
 .descript_text {

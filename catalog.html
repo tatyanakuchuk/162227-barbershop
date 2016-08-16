@@ -15,7 +15,7 @@
 					</a>
 				</div>
 				<nav class="main_navigation">
-					<ul>
+					<ul class="navigation_list">
 						<li>
 							<a href="#">Информация</a>
 						</li>
@@ -38,7 +38,7 @@
 				</div>
 			</div>
 		</header>
-		<main class="container clearfix">
+		<main class="container">
 			<h1>Средства для ухода</h1>
 													<!--  ПОДМЕНЮ  -->
 			<div class="breadcrumbs">
@@ -55,127 +55,134 @@
 				</ul>
 			</div>
 														<!--  ФИЛЬТРЫ  -->
-			<section class="filters">
-					<form action="#" method="post">
-						<div class="filter">
-							<h2>Производители:</h2>
-							<input type="checkbox" id="baxter" checked>
-							<label for="baxter">baxter of california</label>
-							<input type="checkbox" id="natty">
-							<label for="natty">natty</label>
-							<input type="checkbox" id="suavecito" checked>
-							<label for="suavecito">suavecito</label>
-							<input type="checkbox" id="malin">
-							<label for="malin">malin+goetz</label>
-							<input type="checkbox" id="murray's">
-							<label for="murray's">murray's</label>
-							<input type="checkbox" id="american" checked>
-							<label for="american">american crew</label>
-						</div>
-						<div class="filter">
-							<h2>Группы товаров:</h2>
-							<input type="radio" name="select" id="shave" value="shave">
-							<label for="shave">Бритвенные принадлежности</label>
-							<input type="radio" name="select" id="care" value="care" checked>
-							<label for="care">Средства для ухода</label>
-							<input type="radio" name="select" id="accessories" value="accessories">
-							<label for="accessories">Аксессуары</label>
-						</div>
-						<input type="submit" value="Показать">
-					</form>					
-			</section>
+			<div class="inner_wrapper clearfix">
+				<div class="left_col">
+					<section class="filters">
+						<form action="#" method="post">
+							<div class="filter">
+								<h2>Производители:</h2>
+								<input type="checkbox" id="baxter" checked>
+								<label for="baxter">baxter of california</label>
+								<input type="checkbox" id="natty">
+								<label for="natty">natty</label>
+								<input type="checkbox" id="suavecito" checked>
+								<label for="suavecito">suavecito</label>
+								<input type="checkbox" id="malin">
+								<label for="malin">malin+goetz</label>
+								<input type="checkbox" id="murray's">
+								<label for="murray's">murray's</label>
+								<input type="checkbox" id="american" checked>
+								<label for="american">american crew</label>
+							</div>
+							<div class="filter">
+								<h2>Группы товаров:</h2>
+								<input type="radio" name="select" id="shave" value="shave">
+								<label for="shave">Бритвенные принадлежности</label>
+								<input type="radio" name="select" id="care" value="care" checked>
+								<label for="care">Средства для ухода</label>
+								<input type="radio" name="select" id="accessories" value="accessories">
+								<label for="accessories">Аксессуары</label>
+							</div>
+							<input type="submit" value="Показать">
+						</form>					
+					</section>
+				</div>
 												<!--  КАТАЛОГ ТОВАРОВ  -->
-			<section class="items">
-				<div class="item">
-					<a href="#">
-						<img src="img/набор-1.jpg" alt="Набор для путешествий">
-					</a>
-					<h3 class="item_title">
-						<a href="#">Набор для путешествий <span class="item_firm">"Baxter of California"</span></a>
-					</h3>
-					<div class="purchase">
-						<div class="price">2900 руб.</div>
-						<a href="#" class="btn_buy">Купить</a>
-					</div>
-				</div>
-				<div class="item">
-					<a href="#">
-						<img src="img/кондиционер.jpg" alt="Увлажняющий кондиционер">
-					</a>
-					<h3 class="item_title">
-						<a href="#">Увлажняющий кондиционер <span class="item_firm">"Baxter of California"</span></a>
-					</h3>
-					<div class="purchase">
-						<div class="price">750 руб.</div>
-						<a href="#" class="btn_buy">Купить</a>
-					</div>
-				</div>
-				<div class="item">
-					<a href="#">
-						<img src="img/гель-2.jpg" alt="Гель для волос">
-					</a>
-					<h3 class="item_title">
-						<a href="#">Гель для волос <span class="item_firm">"Suavecito"</span></a>
-					</h3>
-					<div class="purchase">
-						<div class="price">290 руб.</div>
-						<a href="" class="btn_buy">Купить</a>
-					</div>
-				</div>
-				<div class="item">
-					<a href="#">
-						<img src="img/глина.jpg" alt="Глина для укладки волос">
-					</a>
-					<h3 class="item_title">
-						<a href="#">Глина для укладки волос <span class="item_firm">"American crew"</span></a>
-					</h3>
-					<div class="purchase">
-						<div class="price">500 руб.</div>
-						<a href="#" class="btn_buy">Купить</a>
-					</div>
-				</div>
-				<div class="item">
-					<a href="#">
-						<img src="img/гель.jpg" alt="Гель для волос">
-					</a>
-					<h3 class="item_title">
-						<a href="#">Гель для волос <span class="item_firm">"American crew"</span></a>
-					</h3>
-					<div class="purchase">
-						<div class="price">300 руб.</div>
-						<a href="#" class="btn_buy">Купить</a>
-					</div>
-				</div>
-				<div class="item">
-					<a href="#">
-						<img src="img/набор.jpg" alt="Набор для бритья">
-					</a>
-					<h3>
-						<a class="item_title" href="#">Набор для бритья <span class="item_firm">"Baxter of California"</span></a>
-					</h3>
-					<div class="purchase">
-						<div class="price">3900 руб.</div>
-						<a href="#" class="btn_buy">Купить</a>
-					</div>
-				</div>
-			</section>
+				<div class="right_col">
+					<section class="items">
+						<div class="item">
+							<a href="#">
+								<img src="img/набор-1.jpg" alt="Набор для путешествий">
+							</a>
+							<h3 class="item_title">
+								<a href="#">Набор для путешествий <span class="item_firm">"Baxter of California"</span></a>
+							</h3>
+							<div class="purchase">
+								<div class="price">2900 руб.</div>
+								<a href="#" class="btn_buy">Купить</a>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="img/кондиционер.jpg" alt="Увлажняющий кондиционер">
+							</a>
+							<h3 class="item_title">
+								<a href="#">Увлажняющий кондиционер <span class="item_firm">"Baxter of California"</span></a>
+							</h3>
+							<div class="purchase">
+								<div class="price">750 руб.</div>
+								<a href="#" class="btn_buy">Купить</a>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="img/гель-2.jpg" alt="Гель для волос">
+							</a>
+							<h3 class="item_title">
+								<a href="#">Гель для волос <span class="item_firm">"Suavecito"</span></a>
+							</h3>
+							<div class="purchase">
+								<div class="price">290 руб.</div>
+								<a href="" class="btn_buy">Купить</a>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="img/глина.jpg" alt="Глина для укладки волос">
+							</a>
+							<h3 class="item_title">
+								<a href="#">Глина для укладки волос <span class="item_firm">"American crew"</span></a>
+							</h3>
+							<div class="purchase">
+								<div class="price">500 руб.</div>
+								<a href="#" class="btn_buy">Купить</a>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="img/гель.jpg" alt="Гель для волос">
+							</a>
+							<h3 class="item_title">
+								<a href="#">Гель для волос <span class="item_firm">"American crew"</span></a>
+							</h3>
+							<div class="purchase">
+								<div class="price">300 руб.</div>
+								<a href="#" class="btn_buy">Купить</a>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="img/набор.jpg" alt="Набор для бритья">
+							</a>
+							<h3>
+								<a class="item_title" href="#">Набор для бритья <span class="item_firm">"Baxter of California"</span></a>
+							</h3>
+							<div class="purchase">
+								<div class="price">3900 руб.</div>
+								<a href="#" class="btn_buy">Купить</a>
+							</div>
+						</div>
+					</section>
+				
 											<!--  ПАГИНАЦИЯ  -->
-			<section class="pagination">
-				<ul class="pagination_list">
-					<li class="pagination_item">
-						<a href="#">1</a>
-					</li>
-					<li class="pagination_item">
-						<span class="active">2</span>
-					</li>
-					<li class="pagination_item">
-						<a href="#">3</a>
-					</li>
-					<li class="pagination_item">
-						<a href="#">4</a>
-					</li>
-				</ul>
-			</section>
+					<section class="pagination">
+						<ul class="pagination_list">
+							<li class="pagination_item">
+								<a href="#">1</a>
+							</li>
+							<li class="pagination_item">
+								<span class="active_page">2</span>
+							</li>
+							<li class="pagination_item">
+								<a href="#">3</a>
+							</li>
+							<li class="pagination_item">
+								<a href="#">4</a>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
 		</main>
 												<!--  FOOTER  -->
 		<footer class="main_footer">
