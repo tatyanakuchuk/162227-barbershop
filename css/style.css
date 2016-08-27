@@ -81,7 +81,8 @@ p {
 	text-decoration: none;
 }
 
-.navigation_list a:hover {
+.navigation_list a:hover,
+.navigation_list a:active {
 	background: #242424;
 }
 
@@ -138,7 +139,8 @@ p {
 	opacity: 0.3;
 }
 
-.login:hover {
+.login:hover,
+.login:active {
 	background: #242424;
 }
 .login:hover::before {
