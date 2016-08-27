@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Барбершоп «Бородинский»</title>
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 												<!--  HEADER  -->
@@ -59,31 +61,31 @@
 				<div class="left_col">
 					<section class="filters">
 						<form action="#" method="post">
-							<div class="filter">
+							<div class="filter filter_fabric">
 								<h2>Производители:</h2>
-								<input type="checkbox" id="baxter" checked>
-								<label for="baxter">baxter of california</label>
+								<input type="checkbox" id="baxter" checked >
+								<label for="baxter"><span class="chekcbox_indicator"></span>baxter of california</label>
 								<input type="checkbox" id="natty">
-								<label for="natty">natty</label>
+								<label for="natty"><span class="chekcbox_indicator"></span>natty</label>
 								<input type="checkbox" id="suavecito" checked>
-								<label for="suavecito">suavecito</label>
+								<label for="suavecito"><span class="chekcbox_indicator"></span>suavecito</label>
 								<input type="checkbox" id="malin">
-								<label for="malin">malin+goetz</label>
+								<label for="malin"><span class="chekcbox_indicator"></span>malin+goetz</label>
 								<input type="checkbox" id="murray's">
-								<label for="murray's">murray's</label>
+								<label for="murray's"><span class="chekcbox_indicator"></span>murray's</label>
 								<input type="checkbox" id="american" checked>
-								<label for="american">american crew</label>
+								<label for="american"><span class="chekcbox_indicator"></span>american crew</label>
 							</div>
-							<div class="filter">
+							<div class="filter filter_product">
 								<h2>Группы товаров:</h2>
 								<input type="radio" name="select" id="shave" value="shave">
-								<label for="shave">Бритвенные принадлежности</label>
+								<label for="shave"><span class="chekcbox_indicator"></span>Бритвенные принадлежности</label>
 								<input type="radio" name="select" id="care" value="care" checked>
-								<label for="care">Средства для ухода</label>
+								<label for="care"><span class="chekcbox_indicator"></span>Средства для ухода</label>
 								<input type="radio" name="select" id="accessories" value="accessories">
-								<label for="accessories">Аксессуары</label>
+								<label for="accessories"><span class="chekcbox_indicator"></span>Аксессуары</label>
 							</div>
-							<input type="submit" value="Показать">
+							<input type="submit" value="Показать" class="filter_btn">
 						</form>					
 					</section>
 				</div>
