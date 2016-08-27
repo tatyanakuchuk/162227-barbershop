@@ -339,6 +339,10 @@ input[type="radio"]:disabled + label::before {
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
+.item:hover {
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
 .item:nth-child(3n) {
 	margin-right: 0;
 }
@@ -562,6 +566,11 @@ address a {
 	margin-bottom: 20px;
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
+
+.main_foto:hover {
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
 .small_fotos {
 	font-size: 0;
 }
@@ -577,6 +586,10 @@ address a {
 
 .small_fotos a:last-child {
 	margin-right: 0;
+}
+
+.small_fotos a:hover {
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 					/*	ОПИСАНИЕ ТОВАРА*/
 .item_descript {
