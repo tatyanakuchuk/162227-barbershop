@@ -17,7 +17,6 @@ h1 {
 	line-height: 42px;
 	color: #000;
 	margin: 0;
-	margin-bottom: 10px;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -51,7 +50,7 @@ p {
 .logo {
 	width: 111px;
 	float: left;
-	padding: 23px 20px;
+	padding: 24px 20px;
 }
 
 .main_navigation {
@@ -72,7 +71,7 @@ p {
 
 .navigation_list a {
 	display: inline-block;
-	padding: 25px 20px;
+	padding: 26px 20px;
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: 700;
@@ -105,11 +104,9 @@ p {
 	background: #fff;
 }
 
-
-
 .user_block {
 	float: right;
-	margin-right: 15px;
+
 }
 
 .login {
@@ -143,21 +140,27 @@ p {
 .login:active {
 	background: #242424;
 }
+
 .login:hover::before {
 	opacity: 1;
 }
 
 
 main.container {
-	padding-top: 28px;
+	padding-top: 49px;
 	background-color: #fdfaf7;
 	background-image: url(../img/pattern-main.jpg);
 	background-repeat: repeat;
 }
+
+.page_header {
+	margin-bottom: 15px;
+}
 					/*	ХЛЕБНЫЕ КРОШКИ	*/
 .breadcrumbs {
-	margin-bottom: 48px;
+	margin-bottom: 50px;
 }
+
 .breadcrumbs ul {
 	padding: 0;
 	margin: 0;
@@ -172,7 +175,7 @@ main.container {
 	position: relative;
 	font-size: 14px;
 	line-height: 24px;
-	margin-right: 40px;
+	margin-right: 42px;
 	font-weight: 700;
 }
 
@@ -210,33 +213,27 @@ main.container {
 
 .filter h2 {
 	text-transform: uppercase;
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 }
 
 .filter label {
 	display: block;
 	position: relative;
 	max-width: 150px;
-	position: relative;
 	line-height: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-left: 40px;
-	margin-bottom: 20px;
+	margin-left: 42px;
+	margin-bottom: 19px;
+	cursor: pointer;
 }
 
-.filter span {
-	position: absolute;
-	content: "";
-	display: block;
-	width: 16px;
-	height: 16px;
-	border: 2px solid #000;
-	left: -40px;
+.filter_fabric label:last-child {
+	margin-bottom: 50px;
 }
 
-.filter_product span {
-	border-radius: 50%;
+.filter_product label:last-child {
+	margin-bottom: 52px;
 }
 
 input[type="checkbox"],
@@ -244,55 +241,58 @@ input[type="radio"] {
 	display: none;
 }
 
-input[type="checkbox"] + label:last-child {
-	margin-bottom: 45px;
-}
-
-input[type="radio"] + label:last-child {
-	margin-bottom: 50px;
-}
-
-input[type="checkbox"]:checked + label::before,
-input[type="checkbox"]:checked + label::after {
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
 	content: "";
-	display: block;
 	position: absolute;
-	background: #000;
-	width: 16px;
-	height: 2px;
-	top: 9px;
-	left: -38px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	left: -43px;
 }
 
 input[type="checkbox"] + label::before {
-	transform: rotate(45deg);
+	background-position: 0 -50px;
+	top: -2px;
 }
 
-input[type="checkbox"] + label::after {
-	transform: rotate(-45deg);
+input[type="radio"] + label::before {
+	background-position: 0 -75px;
+	top: -1px;
+}
+
+input[type="checkbox"]:checked + label::before {
+	background-position: -25px -50px;
 }
 
 input[type="radio"]:checked + label::before {
-	content: "";
-	display: block;
-	position: absolute;
-	background: #000;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	top: 6px;
-	left: -34px;
+	background-position: -25px -75px;
 }
 
-input[type="checkbox"]:disabled + label span,
-input[type="radio"]:disabled + label span {
-	border: 2px solid #afadab;
+input[type="checkbox"] + label:hover,
+input[type="checkbox"]:checked + label:hover,
+input[type="radio"] + label:hover,
+input[type="radio"]:checked + label:hover {
+	color: #663d15;
+}
+
+input[type="checkbox"]:checked:disabled + label::before,
+input[type="radio"]:checked:disabled + label::before {
+	opacity: 0.3;
 }
 
 input[type="checkbox"]:disabled + label::before,
-input[type="checkbox"]:disabled + label::after,
 input[type="radio"]:disabled + label::before {
-	background: #afadab;
+	opacity: 0.3;
+}
+
+input[type="checkbox"]:checked:disabled + label,
+input[type="checkbox"]:disabled + label, 
+input[type="radio"]:checked:disabled + label,
+input[type="radio"]:disabled + label {
+	color: #adaba9;
 }
 
 					/*	КНОПКА ФОРМЫ	*/
@@ -325,12 +325,14 @@ input[type="radio"]:disabled + label::before {
 	width: 700px;
 	margin-left: 20px;
 	float: right;
+	padding-top: 6px;
 }
 
 .items {
 	font-size: 0;
-	margin-bottom: 45px;
+	margin-bottom: 27px;
 }
+
 .item {
 	display: inline-block;
 	width: 220px;
@@ -349,17 +351,31 @@ input[type="radio"]:disabled + label::before {
 	margin-right: 0;
 }
 
- .item a {
+.item a {
  	display: block;
- }
+}
 
- .item_firm {
+.item img {
+	margin-bottom: 10px;
+}
+
+h3.item_title {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 700;
+	margin: 0;
+	margin-left: 16px;
+	margin-bottom: 15px;
+}
+
+.item_firm {
  	display: block;
  	text-transform: uppercase;
- }
+}
 
-h3 {
-	line-height: 18px;
+.item_title a {
+	text-decoration: none;
+	color: #000;
 }
 
 .purchase {
@@ -381,12 +397,12 @@ a.btn_buy {
 }
 
 .price {
-	width: 110px;
+	width: 105px;
 	background: #e5e5e5;
 }
 
 a.btn_buy {
-	width: 80px;
+	width: 78px;
 	background: #000;
 	color: #fff;
 	text-decoration: none;
@@ -437,7 +453,7 @@ ul.pagination_list {
 						/*	ФУТЕР	*/
 .main_footer {
 	margin-top: 50px;
-	padding-top: 50px;
+	padding-top: 56px;
 	padding-bottom: 42px;
 	background-color: #000;
 	background-image: url(../img/pattern-footer.jpg);
@@ -511,7 +527,7 @@ address a {
 }
 
 .social_btn_vk::after {
-	background-position: 0 2px	
+	background-position: 0 2px;	
 }
 
 .social_btn_vk:hover::after {
@@ -565,7 +581,7 @@ address a {
 }
 
 .main_foto {
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -597,6 +613,7 @@ address a {
 .item_descript {
 	width: 390px;
 	float: right;
+	padding-top: 22px;
 }
 
 .service_info {
@@ -612,7 +629,7 @@ address a {
 
 .code_item {
 	float: right;
-	width: 220px;
+	width: 230px;
 	text-align: right;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -629,6 +646,7 @@ address a {
 	text-align: left;
 	margin-bottom: 65px;
 }
+
 .set p {
 	font-size: 24px;
 	line-height: 30px;
@@ -636,17 +654,20 @@ address a {
 	font-weight: 700;
 	margin-bottom: 25px;
 }
+
 .set_list {
 	margin: 0;
 	padding: 0;
-	padding-left: 21px;
+	padding-left: 22px;
 	text-transform: uppercase;
 	font-weight: 700;
 	list-style: none;
 }
+
 .set_item {
 	position: relative;
 }
+
 .set_item::before {
 	content: "";
 	position: absolute;
@@ -657,7 +678,6 @@ address a {
 	transform: rotate(45deg);
 	top: 8px;
 	left: -20px;
-
 }
 
 						/*	ПСЕВДОРАСПОРКА	*/
